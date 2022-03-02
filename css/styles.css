@@ -475,6 +475,10 @@ header {
   background-color: transparent;
   cursor: pointer;
 }
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
 /* Стили для portfolio.html */
 
 .filter {
