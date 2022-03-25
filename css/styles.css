@@ -450,11 +450,25 @@ header {
   height: 50px;
   min-width: 358px;
   padding: 15px 16px;
+  margin-right: 12px;
   background-color: var(--background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+.footer-button {
+  height: 50px;
+  min-width: 200px;
+  background-color: var(--accent-color);
+  color: var(--invert-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: var(--accent-color);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
 .backdrop {
   position: fixed;
