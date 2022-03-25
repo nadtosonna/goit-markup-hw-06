@@ -432,6 +432,30 @@ header {
 .social-link-footer:focus {
   background-color: var(--accent-color);
 }
+.footer-modal {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+.footer-modal label {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--invert-text-color);
+}
+.footer-modal input {
+  height: 50px;
+  min-width: 358px;
+  padding: 15px 16px;
+  background-color: var(--background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -453,7 +477,6 @@ header {
   transform: translate(-50%, -50%) scale(1);
 
   width: 528px;
-  height: 581px;
   border-radius: 4px;
   background-color: var(--invert-text-color);
   opacity: 1;
@@ -475,12 +498,87 @@ header {
   background-color: transparent;
   cursor: pointer;
 }
+.close-button:hover .closing-icon {
+  fill: var(--accent-color);
+}
 .modal-form {
+  align-items: center;
+  justify-content: center;
+
+  width: 528px;
+
+  padding: 40px;
+}
+.modal-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: #212121;
+}
+.form-field {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-field label {
+  margin-bottom: 4px;
+}
+.form-field input {
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-field input:focus {
+  border: 1px solid var(--accent-color);
+}
+.form-field input:hover {
+  border: 1px solid var(--accent-color);
+}
+.form-field input:active {
+  border: 1px solid var(--accent-color);
 }
 textarea {
   resize: none;
+}
+.form-field textarea {
+  margin: 0;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-field textarea:hover {
+  border: 1px solid var(--accent-color);
+}
+.form-field-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-button {
+  display: inline-block;
+  align-items: center;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 56px;
+  margin-top: 30px;
+  border-radius: 4px;
+  border: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  background-color: var(--accent-color);
+  color: var(--invert-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  cursor: pointer;
 }
 /* Стили для portfolio.html */
 
