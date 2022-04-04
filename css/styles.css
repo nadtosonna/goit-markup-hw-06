@@ -599,6 +599,12 @@ textarea {
   top: 11px;
   left: 12px;
 }
+.agreement-link {
+  color: var(--accent-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+}
 .modal-button {
   display: inline-block;
   align-items: center;
