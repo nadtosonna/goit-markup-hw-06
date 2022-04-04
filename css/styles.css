@@ -591,6 +591,11 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.checkbox-label {
+  display: block;
 }
 .form-input-field {
   position: relative;
@@ -600,10 +605,27 @@ textarea {
   top: 11px;
   left: 12px;
 }
+.checkbox-slot {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.checkbox-icon {
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--header-text-color);
+  border-radius: 4px;
+}
+.checkbox-slot:checked + .checkbox-icon {
+  background-image: url(/images/icons.svg#icon-check);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
 .agreement-link {
   color: var(--accent-color);
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration-line: underline;
 }
 .modal-button {
