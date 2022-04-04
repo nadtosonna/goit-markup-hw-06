@@ -484,6 +484,7 @@ header {
 }
 .button-text-send {
   margin-right: 10px;
+  color: var(--invert-text-color);
 }
 .icon-send {
   display: block;
