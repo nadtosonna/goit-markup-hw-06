@@ -596,6 +596,8 @@ textarea {
 }
 .checkbox-label {
   display: block;
+  justify-content: center;
+  align-items: center;
 }
 .form-input-field {
   position: relative;
@@ -605,7 +607,10 @@ textarea {
   top: 11px;
   left: 12px;
 }
-.checkbox-slot {
+.checkbox-label {
+  display: flex;
+}
+.checkbox-input {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -618,10 +623,10 @@ textarea {
   border: 2px solid var(--header-text-color);
   border-radius: 4px;
 }
-.checkbox-slot:checked + .checkbox-icon {
-  background-image: url(/images/icons.svg#icon-check);
+.checkbox-input:checked + .checkbox-icon {
+  background-image: url(/images/icon-check-4.svg);
+  background-color: var(--accent-color);
   background-size: contain;
-  background-origin: border-box;
   border-color: var(--accent-color);
 }
 .agreement-link {
