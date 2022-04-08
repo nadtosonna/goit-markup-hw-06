@@ -566,6 +566,7 @@ header {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  resize: none;
   cursor: pointer;
 
   transition: border-color 250ms var(--time-function) fill 250ms var(--time-function);
@@ -576,9 +577,6 @@ header {
 }
 .form-input:focus-within + .icon-label {
   fill: var(--accent-color);
-}
-textarea {
-  resize: none;
 }
 .form-field textarea {
   display: block;
@@ -606,6 +604,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 .checkbox-input {
@@ -636,13 +635,12 @@ textarea {
   text-decoration-line: underline;
 }
 .modal-button {
-  display: inline-block;
+  display: block;
   align-items: center;
   min-width: 200px;
   min-height: 50px;
   padding: 10px 56px;
-  margin-top: 30px;
-  margin-left: 124px;
+ margin: 0 auto;
 
   border-radius: 4px;
   border: var(--accent-color);
